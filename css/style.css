@@ -496,7 +496,10 @@ body::after {
 .item-cards__img {
   width: 495px;
   height: 304px;
-  border-radius: 30px
+  border-radius: 30px;
+  display: flex;
+  -o-object-fit: cover;
+  object-fit: cover
 }
 .item-cards__info {
   display: flex;
@@ -560,14 +563,16 @@ body::after {
   align-items: center
 }
 .slide-beforeafter__bottom {
-  position: relative
+  position: relative;
+  overflow: hidden
 }
 .slide-beforeafter__autograph {
   -webkit-transform: rotate(1.206deg);
   transform: rotate(1.206deg);
   position: absolute;
-  bottom: 4px;
-  left: 12px
+  bottom: -96px;
+  left: 12px;
+  width: 216.452px
 }
 .slide-beforeafter__after {
   text-shadow: 0 0 8px rgba(0,0,0,.25);
@@ -895,8 +900,9 @@ body::after {
     left: 11.65px
   }
   .slide-beforeafter__autograph {
-    bottom: 4px;
-    left: 12px
+    bottom: -66px;
+    left: 12px;
+    width: 160px
   }
   .slide-beforeafter__after {
     padding: 2.5px 7px;
